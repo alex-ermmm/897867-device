@@ -6,7 +6,7 @@
   </head>
   <body>
 	<header class="main-header">
-		<a class="main-header-logo"><img src="img/logo.png">DEVECE</a>
+		<a class="main-header-logo"><img src="img/logo.png" alt="Интернет магазин DEVICE">DEVECE</a>
 		<section class="search">
         <p class="search">Поиск по сайту</p>
 		<!-- Здесь будет форма -->
@@ -139,6 +139,32 @@
 			</ul>
         </div>
 		<a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-	</footer>
-  </body>
+  </footer>	
+	
+	<section class="modal modal-mail">
+      <form class="mail-form" action="https://echo.htmlacademy.ru" method="post">
+      	<p>
+      		<label class="visually-hidden" for="user-mail-name">Ваше имя</label>
+      		<input type="text" mane="name" placeholder="Имя Фамилия">
+      	</p>
+      	<p>
+      		<label class="visually-hidden" for="user-mail-email">Ваш e-mail</label>
+      		<input type="email" mane="email" placeholder="example@example.com">
+      	</p>
+      	<p>
+      		<label class="visually-hidden" for="user-password">Текст письма</label>
+      		<textarea name="comment" placeholder="В свободной форме"></textarea>
+      	</p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close">Закрыть</button>
+    </section>
+    
+    <section class="modal modal-map">
+      <p>
+      	<img src="img/map.jpg" alt="Улица Строителей, 15">
+      </p>
+       <button class="modal-close" type="button">Закрыть</button>
+    </section>
+	</body>
 </html>

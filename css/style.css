@@ -4,7 +4,15 @@
   font-weight: 400;
   src:
     local("Gilroy-Regular"),
-    url("gilroylight.woff") format("woff");
+    url("../fonts/gilroylight.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-weight: 800;
+  src:
+    local("Gilroy-Bold"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
 }
 @font-face {
   font-family: "Open Sans";
@@ -12,24 +20,56 @@
   font-weight: 400;
   src:
     local("Open-Sans-Regular"),
-    url("opensans.woff") format("woff");
+    url("../fonts/opensans.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans Light";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Open-Sans-Light"),
+    url("../fonts/opensanslight.woff") format("woff");
 }
 
 body {
   margin: 0;
   padding: 0;
   font-size: 100%;
-  font-family:  "Gilroy", sans-serif;
+  font-family:  "Gilroy";
   color: black;
   background-color: white;
 }
+p {
+  letter-spacing: normal;
+  font-weight: normal;
+  font-family:  "Open Sans Light";
+  font-size: 15px;
+  color: #464646;
+}
+a {
+  text-decoration: none;
+}
+input{
+  border:0;
+}
+h3{
+  font-size: 36px;
+  font-family: "Gilroy-Bold";
+}
+.container{
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
 .main-header{
   background-color: #f7e296;
+  /*height: 300px;*/
 }
 .main-header-logo{
-  font-family: "Gilroy";
+  font-family: "Gilroy-Bold";
   font-size: 48px;
   font-weight: 800;
+  padding-left: 60px;
 }
 .main-header-logo:hover{
   opacity: 0.6;
@@ -38,7 +78,10 @@ body {
   opacity: 0.3;
 }
 
-
+.compare-menu li{
+  list-style: none;
+  padding-top: 35px;
+}
 
 .user-navigation,
 .compare-menu-basket,
@@ -50,12 +93,15 @@ body {
 }
 .user-navigation{
   background: url("../img/user.svg") no-repeat 5px;
+  color: black;
 }
 .compare-menu-basket{
   background: url("../img/cart.svg") no-repeat 5px;
+  color: black;
 }
 .compare-menu-compare{
   background: url("../img/compare.svg") no-repeat 5px;
+  color: black;
 }
 .user-navigation:hover,
 .compare-menu-basket:hover,
@@ -68,3 +114,260 @@ body {
   opacity: 0.3;
 }
 
+.site-navigation,
+.product-menu{
+  list-style: none;
+  text-transform: uppercase;
+}
+.main-navigation{
+  text-transform: uppercase;
+  padding-left: 60px;
+  padding-top: 35px;
+}
+
+.main-navigation-header,
+.product-menu-delivery,
+.product-menu-warranty,
+.product-menu-contact{
+    color: black;
+    font-family: "Gilroy-Bold";
+    font-weight: 800px; 
+    letter-spacing: 3px;
+}
+
+.main-navigation-header{
+  position: relative;
+  width: 210px;
+  padding-right: 30px;
+  background: url("../img/plus.png") no-repeat 200px;
+  vertical-align: middle;
+}
+
+.main-navigation-header:hover,
+.product-menu-delivery:hover,
+.product-menu-warranty:hover,
+.product-menu-contact:hover{
+    opacity: 0.6;
+}
+.main-navigation-header:active,
+.product-menu-delivery:active,
+.product-menu-warranty:active,
+.product-menu-contact:active{
+    opacity: 0.3;
+}
+.search{
+  padding-left: 60px;
+  padding-top: 35px;
+}
+.search-form input{
+  background-color: #f7e296;
+}
+
+.search-form{
+  padding-left: 30px;
+  background: url("../img/search.svg") no-repeat 5px;
+}
+.search-form:hover{
+  opacity: 0.6;
+}
+.search-form:active{
+  opacity: 1;
+}
+.search-form-button{
+  display: none;
+}
+.search-form-button:active,
+.search-form-button:focus,{
+  display: inline-block;
+}
+.about-line{
+  width: 60px;
+  height: 5px;
+  background-color: black;
+}
+.about-logistic li{
+  font-weight: bold;
+  line-height: 30px;
+}
+.button{
+  text-transform: uppercase;
+  font-family: "Gilroy-Bold";
+  font-weight: bolder;
+  padding: 10px;
+  width: 250px;
+  background-color: #f6f3aa;
+  color: black;
+}
+.button:hover{
+  background-color: #f0c52e;
+}
+.button:active{
+  background-color: #f0c42e;
+  opacity: 0.3;
+}
+
+.wrapper-footer{
+  padding-top: 65px;
+  padding-left: 140px;
+}
+.main-footer {
+  background-color: #565656;
+}
+.main-footer-logo{
+  color: #ffc600;
+  font-family: "Gilroy-Bold";
+}
+.main-footer-logo:hover{
+  opacity: 0.6;
+}
+.main-footer-logo:active{
+  opacity: 0.3;
+}
+.footer-contacts{
+  color: white;
+}
+.product-sections-footer li{
+  text-transform: uppercase;
+  color: white;
+  font-family: "Gilroy-Bold";
+  font-weight: 800px; 
+  letter-spacing: 3px;
+  list-style: none;
+  font-size: 15px;
+}
+.product-sections-footer-delivery,
+.product-sections-footer-warranty,
+.product-sections-footer-credit{
+  color: white;
+}
+.product-sections-footer-delivery:hover,
+.product-sections-footer-warranty:hover,
+.product-sections-footer-credit:hover{
+  color: #b5b5b5;
+}
+.product-sections-footer-delivery:active,
+.product-sections-footer-warranty:active,
+.product-sections-footer-credit:active{
+  color: #7e7e7e;
+}
+
+.main-footer-user{
+  list-style: none;
+  font-size: 15px;
+  font-family: "Open Sans";
+}
+.main-footer-user-enter{
+  background: url("../img/user-bottom.svg") no-repeat 5px;
+  color: white;
+  padding-left: 30px;
+  padding-right: 15px;
+  opacity: 0.7;
+}
+.main-footer-user-basket{
+  background: url("../img/cart-bottom.svg") no-repeat 5px;
+  color: white;
+  padding-left: 30px;
+  padding-right: 15px;
+  opacity: 0.7;
+}
+.main-footer-user-compare{
+  background: url("../img/compare-bottom.svg") no-repeat 5px;
+  color: white;
+  padding-left: 30px;
+  padding-right: 15px;
+  opacity: 0.7;
+}
+.main-footer-user-enter:hover,
+.main-footer-user-basket:hover,
+.main-footer-user-compare:hover{
+  opacity: 1;
+}
+.main-footer-user-enter:active,
+.main-footer-user-basket:active,
+.main-footer-user-compare:active{
+  opacity: 0.3;
+}
+
+.footer-social{
+  width: 250px;
+}
+.social-button-twitter,
+.social-button-facebook,
+.social-button-instagram{
+  opacity: 0.6;
+  padding: 10px;
+}
+.social-button-twitter:hover,
+.social-button-facebook:hover,
+.social-button-instagram:hover{
+  opacity: 1;
+}
+.social-button-twitter:active,
+.social-button-facebook:active,
+.social-button-instagram:active{
+  opacity: 0.3;
+}
+
+.copyrigth{
+  background: url("../img/logo-academy.svg") no-repeat 0 0;
+}
+.copyrigth:hover{
+  opacity: 0.6;
+}
+.copyrigth:active{
+  opacity: 0.3;
+}
+
+.modal{
+  display: none;
+}
+.breadcrumbs{
+  list-style: none;
+}
+ul.breadcrumbs li{
+  display: inline;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.filter fieldset {
+  border: none;
+}
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.filter ul {
+  list-style: none;
+  line-height: 18px;
+}
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #663d15;
+}
+
+.filter-input:disabled + label {
+  color: #000000;
+  opacity: 0.5;
+}
+.catalog ul{
+  list-style: none;
+}
+.catalog h3,
+.catalog a{
+font-size: 18px;
+color: black;
+}
+.catalog-item{
+width: 220px;
+}
+.catalog-item:hover{
+  opacity: 0.6;
+}
+.submit-catalog-item{
+  width: 200px;
+
+}
+.submit-catalog-item:hover{
+  
+}

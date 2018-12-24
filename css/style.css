@@ -538,6 +538,14 @@ background: none;
 
 .footer-social{
   width: 250px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.footer-social li{
+  width: 40px;
+  display: inline;
+  list-style: none;
 }
 .social-button-twitter,
 .social-button-facebook,

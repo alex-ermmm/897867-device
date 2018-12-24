@@ -31,9 +31,17 @@
 			
 			<nav class="main-header-grid bottom-header-grid"> 
 				<div class="main-navigation-catalog main-navigation">
-					<p class="main-navigation-header">Каталог товаров</p>
-					<ul class="site-navigation">
-						<li><!-- Здесь будет меню --></li>
+					<ul class="main-navigation-header">
+						<li><a href="#">Каталог товаров</a>
+						<ul class="site-navigation">
+							<li class="site-navigation-item"><a href="vr.html">Виртуальная реальность</a></li>
+							<li class="site-navigation-item"><a href="monopod.html">Моноподы для селфи</a></li>
+							<li class="site-navigation-item"><a href="action.html">Экшн-камеры</a></li>
+							<li class="site-navigation-item"><a href="fitnes.html">Фитнес-браслеты</a></li>
+							<li class="site-navigation-item"><a href="smart.html">Умные часа</a></li>
+							<li class="site-navigation-item"><a href="quadcopter.html">Квадракоптеры</a></li>
+						</ul>
+						</li>
 					</ul>
 				</div>
 				<div class="main-navigation-product-menu">
@@ -48,8 +56,8 @@
 		<main class="header">
 			<h1>Моноподы для селфи</h1>
 			<ul class="breadcrumbs">
-				<li><a href="index.html">Главная</a></li>&rsaquo;
-				<li><a href="catalog.html">Каталог товаров</a></li>&rsaquo;
+				<li class="breadcrumbs-items"><a href="index.html">Главная</a></li>&rsaquo;
+				<li class="breadcrumbs-items"><a href="catalog.html">Каталог товаров</a></li>&rsaquo;
 				<li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
 			</ul>
 			<div class="main-content">
@@ -62,23 +70,23 @@
 				            <legend>Цвет</legend>
 							<ul class="filter-color">
 								<li>
-									<input class="filter-color-select visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" checked>
+									<input class="filter-color-select filter-input filter-input-checkbox" type="checkbox" name="black" checked>
 					                <label for="filter-suavecito">Черный</label>
 				                </li>
 								<li>
-									<input class="filter-color-select visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white">
+									<input class="filter-color-select filter-input filter-input-checkbox" type="checkbox" name="white">
 					                <label for="filter-suavecito">Белый</label>
 				                </li>
 								<li class="filter-color-select">
-									<input class="filter-color-select visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" checked>
+									<input class="filter-color-select filter-input filter-input-checkbox" type="checkbox" name="blue" checked>
 					                <label for="filter-suavecito">Синий</label>
 								</li>
 								<li class="filter-color-select">
-									<input class="filter-color-select visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" checked>
+									<input class="filter-color-select filter-input filter-input-checkbox" type="checkbox" name="red" checked>
 					                <label for="filter-suavecito">Красный</label>
 								</li>
 								<li>
-									<input class="filter-color-select visually-hidden filter-input filter-input-checkbox" type="checkbox" name="rose">
+									<input class="filter-color-select filter-input filter-input-checkbox" type="checkbox" name="rose">
 					                <label for="filter-suavecito">Розовый</label>
 					            </li>
 							</ul>
@@ -87,16 +95,16 @@
 			            <legend>Группы товаров:</legend>
 			            <ul class="filter-bluetooth">
 			              <li class="filter-option">
-			                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="filter-shave">
+			                <input class="filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="filter-shave">
 			                <label for="filter-shave">Есть</label>
 			              </li>
 			              <li class="filter-option">
-			                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="hair-care" id="filter-care" checked>
+			                <input class="filter-input filter-input-radio" type="radio" name="product-group" value="hair-care" id="filter-care" checked>
 			                <label for="filter-care">Нет</label>
 			              </li>
 			            </ul>
 			          </fieldset>
-			          <button type="submit" class="filter-button button">Показать</button>
+			          <button type="submit" class="button filter-button">Показать</button>
 					</form>
 					</section>
 				</div>

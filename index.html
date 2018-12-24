@@ -31,9 +31,17 @@
 			
 			<nav class="main-header-grid bottom-header-grid"> 
 				<div class="main-navigation-catalog main-navigation">
-					<p class="main-navigation-header">Каталог товаров</p>
-					<ul class="site-navigation">
-						<li><!-- Здесь будет меню --></li>
+					<ul class="main-navigation-header">
+						<li><a href="#">Каталог товаров</a>
+						<ul class="site-navigation">
+							<li class="site-navigation-item"><a href="vr.html">Виртуальная реальность</a></li>
+							<li class="site-navigation-item"><a href="monopod.html">Моноподы для селфи</a></li>
+							<li class="site-navigation-item"><a href="action.html">Экшн-камеры</a></li>
+							<li class="site-navigation-item"><a href="fitnes.html">Фитнес-браслеты</a></li>
+							<li class="site-navigation-item"><a href="smart.html">Умные часа</a></li>
+							<li class="site-navigation-item"><a href="quadcopter.html">Квадракоптеры</a></li>
+						</ul>
+						</li>
 					</ul>
 				</div>
 				<div class="main-navigation-product-menu">
@@ -45,29 +53,75 @@
 				</div>				
 			</nav>
 		</header>
-		<main class="header">
-			<div class="catalog-item-slider">
-				<div class="slider-image">
-					<img src="img/monopod.png" alt="Монопод">
-				</div>
-				<div class="slider-description">
-					<h3 class="visually-hidden">Делай селфи, <br> как Бен Стиллер!</h3>
+		 <section class="slider">
+	      <div class="container-slider">
+	        <h2 class="visually-hidden">Преимущества</h2>
+	        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+	        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+	        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+	        <div class="slider-controls">
+	          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+	          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+	          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+	        </div>
+	        <ul class="slider-list">
+	          <li class="slider-item">
+	          	<div class="slider-item-description">
+		            <h3>Делай селфи, <br> как Бен Стиллер!</h3>
 					<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длинной и весом всего в 5 киллограм</p>
-					<a class="button" href="catalog-item.html"></a>
-					<table>
-						<tr>
+	            	<a class="slider-item-button button" href="#">Подробнее</a>
+	            	<table class="item-characteristic">
+						<thead class="item-characteristic-head">
 							<td>8,5 м</td>
 							<td>5 кг</td>
 							<td>Карбон</td>
-						</tr>
+						</thead>
 						<tr>
 							<td>Длинна палки</td>
 							<td>Вес палки</td>
 							<td>Материал</td>
 						</tr>
 					</table>
-				</div>
-			</div>
+	            </div>
+	          </li>
+	          <li class="slider-item">
+	          	<div class="slider-item-description">
+		            <h3>Худеем <br> правильно!</h3>
+					<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету </p>
+	            	<a class="slider-item-button button" href="#">Подробнее</a>
+	            	<table class="item-characteristic">
+						<thead class="item-characteristic-head">
+							<td>48 часов</td>
+						</thead>
+						<tr>
+							<td>Без подзарядки</td>
+						</tr>
+					</table>
+	            </div>
+	          </li>
+	          <li class="slider-item">
+	          	<div class="slider-item-description">
+		            <h3>Порхает как бабочка, <br> жалит как пчела!</h3>
+					<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замоскированным под стандартную камеру</p>
+	            	<a class="slider-item-button button" href="#">Подробнее</a>
+	            	<table class="item-characteristic">
+						<thead class="item-characteristic-head">
+							<td>800 м</td>
+							<td>50 м</td>
+						</thead>
+						<tr>
+							<td>Дальность полета</td>
+							<td>Радиус поражения</td>
+						</tr>
+					</table>
+	            </div>
+	          </li>
+	        </ul> 
+	         
+	      </div>
+	    </section>
+
+		<main class="header">
 			<section class="product-sections">
 				<ul class="product-sections-item">
 					<li>
@@ -77,34 +131,34 @@
 						</a>
 					</li>
 					<li>
-						<img class="product-sections-item-image" src="img/monopod-selfie.svg" alt="Моноподы для селфи">
-						<h3>
-							<a href="monopod.html">Моноподы для селфи</a>
-						</h3>
+						<a href="monopod.html">
+							<img class="product-sections-item-image" src="img/monopod-selfie.svg" alt="Моноподы для селфи">
+							<h3>Моноподы для селфи</h3>
+						</a>
 					</li>
 					<li>
-						<img class="product-sections-item-image" src="img/action-camera.svg" alt="Экшн-камеры">
-						<h3>
-							<a href="action.html">Экшн-камеры</a>
-						</h3>
+						<a href="action.html">
+							<img class="product-sections-item-image" src="img/action-camera.svg" alt="Экшн-камеры">
+							<h3>Экшн-камеры</h3>
+						</a>
 					</li>
 					<li>
-						<img class="product-sections-item-image" src="img/fitness-braslet.svg" alt=">Фитнес-браслеты">
-						<h3>
-							<a href="fitnes.html">Фитнес-браслеты</a>
-						</h3>
+						<a href="fitnes.html">
+							<img class="product-sections-item-image" src="img/fitness-braslet.svg" alt=">Фитнес-браслеты">
+							<h3>Фитнес-браслеты</h3>
+						</a>
 					</li>
 					<li>
-						<img class="product-sections-item-image" src="img/smart-watch.svg" alt=">Умные часа">
-						<h3>
-							<a href="smart.html">Умные часа</a>
-						</h3>
+						<a href="smart.html">
+							<img class="product-sections-item-image" src="img/smart-watch.svg" alt=">Умные часа">
+							<h3>Умные часа</h3>
+						</a>
 					</li>
 					<li>
-						<img class="product-sections-item-image" src="img/quadcopter.svg" alt=">Квадракоптеры">
-						<h3>
-							<a href="quadcopter.html">Квадракоптеры</a>
-						</h3>
+						<a href="quadcopter.html">
+							<img class="product-sections-item-image" src="img/quadcopter.svg" alt=">Квадракоптеры">
+							<h3>Квадракоптеры</h3>
+						</a>
 					</li>
 	          	</ul>
 			</section>
@@ -121,22 +175,22 @@
 			<section class="brand">
 				<ul class="brand-list">
 					<li>
-						<a href="#" class="barnd-item">
+						<a href="#" class="brand-item">
 							<img src="img/dji.png" alt="DJI">
 						</a>
 					</li>
 					<li>
-						<a href="#" class="barnd-item">
+						<a href="#" class="brand-item">
 							<img src="img/sp-gadget.png" alt="SP Gadgets">
 						</a>
 					</li>
 					<li>
-						<a href="#" class="barnd-item">
+						<a href="#" class="brand-item">
 							<img src="img/gopro.png" alt="GoPro">
 						</a>
 					</li>
 					<li>
-						<a href="#" class="barnd-item">
+						<a href="#" class="brand-item">
 							<img src="img/vive.png" alt="VIVE">
 						</a>
 					</li>

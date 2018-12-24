@@ -70,24 +70,24 @@
 					            <legend>Цвет</legend>
 								<ul class="filter-color">
 									<li>
-										<input class="filter-color-select filter-input filter-input-checkbox" type="checkbox" name="black" checked>
-						                <label for="filter-suavecito">Черный</label>
+										<input class="filter-color-select filter-input filter-input-checkbox" type="checkbox" name="black" checked id="filter-suavecito-black">
+						                <label for="filter-suavecito-black">Черный</label>
 					                </li>
 									<li>
-										<input class="filter-color-select filter-input filter-input-checkbox" type="checkbox" name="white">
-						                <label for="filter-suavecito">Белый</label>
+										<input class="filter-color-select filter-input filter-input-checkbox" type="checkbox" name="white" id="filter-suavecito-white">
+						                <label for="filter-suavecito-white">Белый</label>
 					                </li>
 									<li class="filter-color-select">
-										<input class="filter-color-select filter-input filter-input-checkbox" type="checkbox" name="blue" checked>
-						                <label for="filter-suavecito">Синий</label>
+										<input class="filter-color-select filter-input filter-input-checkbox" type="checkbox" name="blue" checked id="filter-suavecito-blue">
+						                <label for="filter-suavecito-blue">Синий</label>
 									</li>
 									<li class="filter-color-select">
-										<input class="filter-color-select filter-input filter-input-checkbox" type="checkbox" name="red" checked>
-						                <label for="filter-suavecito">Красный</label>
+										<input class="filter-color-select filter-input filter-input-checkbox" type="checkbox" name="red" checked id="filter-suavecito-red">
+						                <label for="filter-suavecito-red">Красный</label>
 									</li>
 									<li>
-										<input class="filter-color-select filter-input filter-input-checkbox" type="checkbox" name="rose">
-						                <label for="filter-suavecito">Розовый</label>
+										<input class="filter-color-select filter-input filter-input-checkbox" type="checkbox" name="rose" id="filter-suavecito-rose">
+						                <label for="filter-suavecito-rose">Розовый</label>
 						            </li>
 								</ul>
 							</fieldset>
@@ -213,15 +213,15 @@
 	<form class="modal modal-mail">
        	<p>
       		<label class="visually-hidden" for="user-mail-name">Ваше имя</label>
-      		<input type="text" name="name" placeholder="Имя Фамилия">
+      		<input type="text" name="name" placeholder="Имя Фамилия" id="user-mail-name">
       	</p>
       	<p>
       		<label class="visually-hidden" for="user-mail-email">Ваш e-mail</label>
-      		<input type="email" name="email" placeholder="example@example.com">
+      		<input type="email" name="email" placeholder="example@example.com" id="user-mail-email">
       	</p>
       	<p>
       		<label class="visually-hidden" for="user-password">Текст письма</label>
-      		<textarea name="comment" placeholder="В свободной форме"></textarea>
+      		<textarea name="comment" placeholder="В свободной форме" id="user-password"></textarea>
       	</p>
         <button class="button" type="submit">Отправить</button>
       	<button class="modal-close">Закрыть</button>

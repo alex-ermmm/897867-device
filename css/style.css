@@ -1218,7 +1218,6 @@ color: black;
 .catalog-item-detail a{
   display: block;
   padding: 0 auto;
-
 }
 .catalog-item:hover .catalog-item-detail{
   display: block;

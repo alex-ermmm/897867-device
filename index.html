@@ -59,9 +59,9 @@
 		<section class="slider">
 	      <div class="container-slider">
 	        <h2 class="visually-hidden">Преимущества</h2>
-	        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-	        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-	        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+	        <input class="visually-hidden button-slider" type="radio" id="product-1" name="toggle" checked>
+	        <input class="visually-hidden button-slider" type="radio" id="product-2" name="toggle">
+	        <input class="visually-hidden button-slider" type="radio" id="product-3" name="toggle">
 	        <div class="slider-controls">
 	          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
 	          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
@@ -101,14 +101,14 @@
 			            <h3 class="h3">Худеем <br> правильно!</h3>
 						<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету </p>
 		            	<p class="button-box"><a class="slider-item-button button" href="#">Подробнее</a></p>
-		            	<table class="item-characteristic">
-							<tr class="item-characteristic-head">
-								<td>48 часов</td>
-							</tr>
-							<tr>
-								<td>Без подзарядки</td>
-							</tr>
-						</table>
+		            	<div class="item-characteristic">
+							<ul class="item-characteristic-head">
+								<li>48 часов</li>
+							</ul>
+							<ul class="item-characteristic-body">
+								<li>Без подзарядки</li>
+							</ul>
+						</div>
 		            </div>
 		        </div>
 	          </li>
@@ -121,16 +121,16 @@
 			            <h3 class="h3">Порхает как бабочка, <br> жалит как пчела!</h3>
 						<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замоскированным под стандартную камеру</p>
 		            	<p class="button-box"><a class="slider-item-button button" href="#">Подробнее</a></p>
-		            	<table class="item-characteristic">
-							<tr class="item-characteristic-head">
-								<td>800 м</td>
-								<td>50 м</td>
-							</tr>
-							<tr>
-								<td>Дальность полета</td>
-								<td>Радиус поражения</td>
-							</tr>
-						</table>
+		            	<div class="item-characteristic">
+							<ul class="item-characteristic-head">
+								<li>800 м</li>
+								<li>50 м</li>
+							</ul>
+							<ul class="item-characteristic-body">
+								<li>Дальность полета</li>
+								<li>Радиус поражения</li>
+							</ul>
+						</div>
 		            </div>
 		        </div>
 	          </li>
@@ -179,88 +179,88 @@
 	          	</ul>
 			</section>
 	</div>
-<div class="section-wrapper">
-	<input class="visually-hidden" type="radio" id="section-1" name="toggle2" checked>
-    <input class="visually-hidden" type="radio" id="section-2" name="toggle2">
-    <input class="visually-hidden" type="radio" id="section-3" name="toggle2">
-		
-			<div class="decor-line"></div>
-	    	<section class="section">
-	          <ul class="section-controls">
-	            <li><label class="section-controls-labels" for="section-1">Доставка</label></li>
-	            <li><label class="section-controls-labels" for="section-2">Гарантия</label></li>
-	            <li><label class="section-controls-labels" for="section-3">Кредит</label></li>
-	          </ul>	          
-	          <ul class="section-list">
-	            <li class="section-item item" id="item1">
-	              <h3 class="item-title h3">
-	                Доставка
-	              </h3>
-	              <p class="item-text p">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы не плохо заработаем, поднимая его на ваш этаж.</p>
-	            </li>
-	            <li class="section-item item" id="item2">
-	              <h3 class="item-title h3">
-	                Гарантия
-	              </h3>
-	              <p class="item-text p">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-					Товар, не дом, конечно же</p>
-	            </li>
-	            <li class="section-item item" id="item3">
-	              <h3 class="item-title h3">
-	                Кредит
-	              </h3>
-	              <p class="item-text p">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
-условия кредита. Выгодные для нашего банка, разумеется.</p>
-	            </li>
-	          </ul>
-	        </section>
-	      </div>
+	<div class="section-wrapper">
+		<input class="visually-hidden input-botton" type="radio" id="section-1" name="toggle2" checked>
+	    <input class="visually-hidden input-botton" type="radio" id="section-2" name="toggle2">
+	    <input class="visually-hidden input-botton" type="radio" id="section-3" name="toggle2">
+			
+		<div class="decor-line"></div>
+		<section class="section">
+	      <ul class="section-controls">
+	        <li><label class="section-controls-labels" for="section-1">Доставка</label></li>
+	        <li><label class="section-controls-labels" for="section-2">Гарантия</label></li>
+	        <li><label class="section-controls-labels" for="section-3">Кредит</label></li>
+	      </ul>	          
+	      <ul class="section-list">
+	        <li class="section-item item" id="item1">
+	          <h3 class="item-title h3">
+	            Доставка
+	          </h3>
+	          <p class="item-text p">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы не плохо заработаем, поднимая его на ваш этаж.</p>
+	        </li>
+	        <li class="section-item item" id="item2">
+	          <h3 class="item-title h3">
+	            Гарантия
+	          </h3>
+	          <p class="item-text p">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+				Товар, не дом, конечно же</p>
+	        </li>
+	        <li class="section-item item" id="item3">
+	          <h3 class="item-title h3">
+	            Кредит
+	          </h3>
+	          <p class="item-text p">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
+	условия кредита. Выгодные для нашего банка, разумеется.</p>
+	        </li>
+	      </ul>
+	    </section>
+	  </div>
 				    
-	<div class="container">	
-		<section class="brand">
-			<ul class="brand-list">
-				<li>
-					<a href="#" class="brand-item">
-						<img src="img/dji.png" width="260" height="100" alt="DJI">
-					</a>
-				</li>
-				<li>
-					<a href="#" class="brand-item">
-						<img src="img/sp-gadget.png" width="260" height="100" alt="SP Gadgets">
-					</a>
-				</li>
-				<li>
-					<a href="#" class="brand-item">
-						<img src="img/gopro.png" width="260" height="100"  alt="GoPro">
-					</a>
-				</li>
-				<li>
-					<a href="#" class="brand-item">
-						<img src="img/vive.png" width="260" height="100"  alt="VIVE">
-					</a>
-				</li>
-			</ul>
-		</section>
-		<div class="info">
-			<section class="about">
-				<h3 class="h3">О нас</h3>
-				<p class="about-header">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-				<p class="about-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-				<ul class="about-logistic">
-					<li>Деловые Линии</li>
-					<li>Автотрейдинг</li>
-					<li>ЖелДорЭкспедиция</li>
+		<div class="container">	
+			<section class="brand">
+				<ul class="brand-list">
+					<li>
+						<a href="#" class="brand-item">
+							<img src="img/dji.png" width="260" height="100" alt="DJI">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="brand-item">
+							<img src="img/sp-gadget.png" width="260" height="100" alt="SP Gadgets">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="brand-item">
+							<img src="img/gopro.png" width="260" height="100"  alt="GoPro">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="brand-item">
+							<img src="img/vive.png" width="260" height="100"  alt="VIVE">
+						</a>
+					</li>
 				</ul>
-				<p class="info-button"><a class="button" href="#">Подробнее о нас</a></p>
 			</section>
-			<section class="contact">
-				<h3 class="h3">Контакты</h3>
-				<p class="about-header">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-				<p class="p"><a href="" class="contacts-button-map"><img src="img/map.jpg" width="560" height="222" alt="улица Строителей, 15"></a></p>
-				<p class="mail-button"><a class="button mail" href="#">Напишите нам</a></p>
-			</section>
-		</div>		
-	</div>
+			<div class="info">
+				<section class="about">
+					<h3 class="h3">О нас</h3>
+					<p class="about-header">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+					<p class="about-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+					<ul class="about-logistic">
+						<li>Деловые Линии</li>
+						<li>Автотрейдинг</li>
+						<li>ЖелДорЭкспедиция</li>
+					</ul>
+					<p class="info-button"><a class="button" href="#">Подробнее о нас</a></p>
+				</section>
+				<section class="contact">
+					<h3 class="h3">Контакты</h3>
+					<p class="about-header">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+					<p class="p"><a href="contact.html" class="contacts-button-map"><img src="img/map.jpg" width="560" height="222" alt="улица Строителей, 15"></a></p>
+					<p class="mail-button"><a href="writeus.html" class="button mail" href="#">Напишите нам</a></p>
+				</section>
+			</div>		
+		</div>
 		<footer class="main-footer">
 			<div class="wrapper-footer">
 				<div class="footer-grid footer-grid-top">

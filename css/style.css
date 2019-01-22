@@ -445,7 +445,7 @@ li:hover .site-navigation {
   border: none;
   width: 315px;
   height: 50px;
-  outline: none;
+
 }
 .search-form input[type="submit"]{
   opacity: 0;
@@ -1843,6 +1843,14 @@ a.arrow:active {
   border-radius: 50%;
   cursor: pointer;
 }
+.slider-controls label:focus {
+outline: inherit;
+}
+
+.button-slider:focus ~  .slider-controls label {
+  outline: 1px dotted #212121;
+  outline: 5px auto -webkit-focus-ring-color;
+}
 .slider-controls label::after {
   content: "";
   margin: 0 5px;
@@ -2171,7 +2179,6 @@ a.arrow:active {
   border-right: 6px solid black;
   min-height: 320px;
 }
-
 .section-controls label {
   display: block;
   width: 160px;
@@ -2244,11 +2251,17 @@ a.arrow:active {
   background-color: black;
   padding-right: 116px;
   height: 20px;
- 
 }
+#section-1:focus ~ .section label[for="section-1"],
+#section-2:focus ~ .section label[for="section-2"],
+#section-3:focus ~ .section label[for="section-3"] {
+  outline: 1px dotted white;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+
 #section-1:checked ~ .section label[for="section-1"]::before,
 #section-2:checked ~ .section label[for="section-2"]::before,
 #section-3:checked ~ .section label[for="section-3"]::before {
  display: none;
 }
-

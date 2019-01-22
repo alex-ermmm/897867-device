@@ -5,7 +5,7 @@
     <title>Интернет магазин DEVICE</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
 	<div class="container">	
@@ -67,7 +67,7 @@
 	</div>
 	<main class="main-container-header">
 		<div class="content-empty-left"></div>
-		<div class="content-left-header"><h4 class="filter-header">Фильтр</h4></div>
+		<div class="content-left-header"><h4 class="filter-header">Фильтр:</h4></div>
 		<div class="content-center">
 			<section class="sorting-catalog">
 				<ul class="sorting-catalog-type">
@@ -130,7 +130,7 @@
 						</ul>
 					</fieldset>
 					<hr class="filter-line">
-					<fieldset>
+					<fieldset class="filter-bluetooth">
 		            <legend>Bluetooth:</legend>
 		            <ul class="filter-bluetooth">
 		              <li class="filter-option">
@@ -158,8 +158,8 @@
 								<p class="catalog-detail"><a class="compare-item" href="#">Добавить к сравнению</a></p>
 							</div>
 							<div class="catalog-item-description">
-								<h3 class="h3"><a href="item.html">Любителская селфи-палка</a></h3>
-								<span>500 руб.</span>
+								<h3 class="h3"><a href="item.html">Любительская селфи-палка</a></h3>
+								<p>500 руб.</p>
 							</div>
 						</li>
 						<li class="catalog-item">
@@ -194,6 +194,7 @@
 								<h3 class="h3"><a href="item.html">Cелфи-палка "Следуй за мной"</a></h3>
 								<span>4 900 руб.</span>
 							</div>
+							<div class="catalog-new">New</div>
 						</li>
 					</ul>
 
@@ -215,7 +216,10 @@
 				<div class="footer-grid footer-grid-top">
 					<h2 class="main-footer-logo">DEVICE</h2>
 					<ul class="main-footer-user">
-						<li><a class="main-footer-user-enter" href="enter.html">Войти</a></li>
+			        	<li>
+			        		<a class="main-footer-user-enter" href="enter.html">Валентин Петухов</a>
+			        		<span><a class="login-exit" href="enter.html">Выйти</a></span>
+			        	</li>
 						<li><a class="main-footer-user-compare" href="compare.html">Сравнить</a></li>
 						<li><a class="main-footer-user-basket" href="basket.html">Корзина</a></li>
 					</ul>
@@ -223,19 +227,14 @@
 				<div class="footer-grid footer-grid-midle">
 					<p class="footer-adress">г. Москва, ул. Строителей, 15</p>
 					<ul class="product-sections-footer">
-						<li><a class="product-sections-footer-delivery" href="delivery.html">Доставка</a></li>
-						<li><a class="product-sections-footer-warranty" href="warranty.html">Гарантия</a></li>
-						<li><a class="product-sections-footer-credit" href="credit.html">Кредит</a></li>
+						<li><a class="product-sections-footer-delivery" href="#">Доставка</a></li>
+						<li><a class="product-sections-footer-warranty" href="#">Гарантия</a></li>
+						<li><a class="product-sections-footer-credit" href="#">Контакты</a></li>
 					</ul>					
-					<p class="footer-phone">Тел: +7 (495) 495-95-95</p>
+					<div class="footer-phone"><p >Тел.: +7 (495) 495-95-95</p></div>
 				</div>
 				<div class="footer-grid footer-grid-bottom">
 					<ul class="footer-social">
-						<li>
-							<a class="social-button-twitter" href="#">
-								<img src="img/twitter.svg" width="32" height="32" alt="Твиттер">
-							</a>
-						</li>
 						<li>
 							<a class="social-button-facebook" href="#">
 								<img src="img/facebook.svg" width="32" height="32" alt="Фейсбук">
@@ -244,6 +243,11 @@
 						<li>
 							<a class="social-button-instagram" href="#">
 								<img src="img/instagram.svg" width="32" height="32" alt="Инстаграм">
+							</a>
+						</li>
+						<li>
+							<a class="social-button-twitter" href="#">
+								<img src="img/twitter.svg" width="32" height="32" alt="Твиттер">
 							</a>
 						</li>
 					</ul>
@@ -277,17 +281,6 @@
       	<img src="img/map.jpg" width="560" height="222" alt="Улица Строителей, 15">
        <button class="modal-close" type="button">Закрыть</button>
     </section>
-  	
-  	<script>
-	  var link = document.querySelector(".login-link");
-	  
-	  var popup = document.querySelector(".modal-login");
-	  
-	  link.addEventListener("click", function (evt) {
-	    evt.preventDefault();
-	  });
-	</script>
-
-
+	<script type="text/javascript" async="" src="js/script.min.js"></script>
   </body>
 </html>

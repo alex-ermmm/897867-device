@@ -5,7 +5,7 @@
     <title>Интернет магазин DEVICE</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
 	<div class="container">
@@ -77,18 +77,18 @@
 			            <h3 class="h3">Делай селфи, <br> как Бен Стиллер!</h3>
 						<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длинной и весом всего в 5 киллограм</p>
 		            	<p class="button-box"><a class="button" href="#">Подробнее</a></p>
-		            	<table class="item-characteristic">
-							<tr class="item-characteristic-head">
-								<td>8,5 м</td>
-								<td>5 кг</td>
-								<td>Карбон</td>
-							</tr>
-							<tr>
-								<td>Длинна палки</td>
-								<td>Вес палки</td>
-								<td>Материал</td>
-							</tr>
-						</table>
+		            	<div class="item-characteristic">
+							<ul class="item-characteristic-head">
+								<li>8,5 м</li>
+								<li>5 кг</li>
+								<li>Карбон</li>
+							</ul>
+							<ul class="item-characteristic-body">
+								<li>Длинна палки</li>
+								<li>Вес палки</li>
+								<li>Материал</li>
+							</ul>
+						</div>
 		            </div>
 		        </div>
 	          </li>
@@ -142,37 +142,37 @@
 				<ul class="product-sections-item">
 					<li>
 						<a href="#">
-							<p><img src="img/vr.svg" width="100" height="100" alt="Виртуальная реальность"></p>
+							<p><img  src="img/vr.svg" width="97" height="55" alt="Виртуальная реальность"></p>
 							<h3 class="h3">Виртуальная реальность</h3>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<p><img src="img/monopod-selfie.svg" width="100" height="100" alt="Моноподы для селфи"></p>
-							<h3 class="h3">Моноподы для селфи</h3>
+							<p><img src="img/monopod-selfie.svg" width="86" height="117" alt="Моноподы для селфи"></p>
+							<h3 class="h3">Моноподы <br>для селфи</h3>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<p><img src="img/action-camera.svg" width="100" height="100" alt="Экшн-камеры"></p>
+							<p><img src="img/action-camera.svg" width="71" height="87" alt="Экшн-камеры"></p>
 							<h3 class="h3">Экшн-камеры</h3>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<p><img src="img/fitness-braslet.svg" width="100" height="100" alt=">Фитнес-браслеты"></p>
+							<p><img  src="img/fitness-braslet.svg" width="107" height="65" alt="Фитнес-браслеты"></p>
 							<h3 class="h3">Фитнес-браслеты</h3>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<p><img src="img/smart-watch.svg" width="100" height="100" alt=">Умные часа"></p>
-							<h3 class="h3">Умные часа</h3>
+							<p><img  src="img/smart-watch.svg" width="100" height="100" alt="Умные часа"></p>
+							<h3 class="h3">Умные часы</h3>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<p><img src="img/quadcopter.svg" width="100" height="100" alt=">Квадракоптеры"></p>
+							<p><img  src="img/quadcopter.svg" width="132" height="69" alt="Квадракоптеры"></p>
 							<h3 class="h3">Квадракоптеры</h3>
 						</a>
 					</li>
@@ -244,20 +244,20 @@
 		<div class="info">
 			<section class="about">
 				<h3 class="h3">О нас</h3>
-				<p class="p">Огромный выбор гаджетов не оставит равнодоушным гика, который есть в каждом из нас.</p>
-				<p class="p">Мы можем доставить наш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями.</p>
+				<p class="about-header">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+				<p class="about-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
 				<ul class="about-logistic">
-					<li>Деловые линии</li>
+					<li>Деловые Линии</li>
 					<li>Автотрейдинг</li>
 					<li>ЖелДорЭкспедиция</li>
 				</ul>
-				<p class="p"><a class="button info-button" href="#">Подробнее о нас</a></p>
+				<p class="info-button"><a class="button" href="#">Подробнее о нас</a></p>
 			</section>
 			<section class="contact">
 				<h3 class="h3">Контакты</h3>
-				<p class="p">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+				<p class="about-header">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 				<p class="p"><a href="" class="contacts-button-map"><img src="img/map.jpg" width="560" height="222" alt="улица Строителей, 15"></a></p>
-				<p class="p"><a class="button info-button mail" href="#">Напишите нам</a></p>
+				<p class="mail-button"><a class="button mail" href="#">Напишите нам</a></p>
 			</section>
 		</div>		
 	</div>
@@ -266,27 +266,22 @@
 				<div class="footer-grid footer-grid-top">
 					<h2 class="main-footer-logo">DEVICE</h2>
 					<ul class="main-footer-user">
-						<li><a class="main-footer-user-enter" href="enter.html">Войти</a></li>
-						<li><a class="main-footer-user-compare" href="compare.html">Сравнить</a></li>
-						<li><a class="main-footer-user-basket" href="basket.html">Корзина</a></li>
+						<li><a class="main-footer-user-enter" href="#">Войти</a></li>
+						<li><a class="main-footer-user-compare" href="#">Сравнить</a></li>
+						<li><a class="main-footer-user-basket" href="#">Корзина</a></li>
 					</ul>
 				</div>
 				<div class="footer-grid footer-grid-midle">
 					<p class="footer-adress">г. Москва, ул. Строителей, 15</p>
 					<ul class="product-sections-footer">
-						<li><a class="product-sections-footer-delivery" href="delivery.html">Доставка</a></li>
-						<li><a class="product-sections-footer-warranty" href="warranty.html">Гарантия</a></li>
-						<li><a class="product-sections-footer-credit" href="credit.html">Кредит</a></li>
+						<li><a class="product-sections-footer-delivery" href="#">Доставка</a></li>
+						<li><a class="product-sections-footer-warranty" href="#">Гарантия</a></li>
+						<li><a class="product-sections-footer-credit" href="#">Контакты</a></li>
 					</ul>					
-					<p class="footer-phone">Тел: +7 (495) 495-95-95</p>
+					<div class="footer-phone"><p >Тел.: +7 (495) 495-95-95</p></div>
 				</div>
 				<div class="footer-grid footer-grid-bottom">
 					<ul class="footer-social">
-						<li>
-							<a class="social-button-twitter" href="#">
-								<img src="img/twitter.svg" width="32" height="32" alt="Твиттер">
-							</a>
-						</li>
 						<li>
 							<a class="social-button-facebook" href="#">
 								<img src="img/facebook.svg" width="32" height="32" alt="Фейсбук">
@@ -295,6 +290,11 @@
 						<li>
 							<a class="social-button-instagram" href="#">
 								<img src="img/instagram.svg" width="32" height="32" alt="Инстаграм">
+							</a>
+						</li>
+						<li>
+							<a class="social-button-twitter" href="#">
+								<img src="img/twitter.svg" width="32" height="32" alt="Твиттер">
 							</a>
 						</li>
 					</ul>
@@ -326,94 +326,10 @@
 	    
 	    <section class="modal modal-map">
 	      	<h2 class="visually-hidden">Как до нас добраться</h2>
-	      	<img class="modal-map-image" src="img/map-big.jpg" width="960" height="559" alt="Улица Строителей, 15">
+  			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779994!2d37.527429315652284!3d55.68703098053579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1548149668519" width="960" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+	      	<p><a href="#"><img src="img/map-big.jpg" width="960" height="559" alt="Улица Строителей, 15"></a></p>
 	       <button class="modal-close" type="submit">Закрыть</button>
 	    </section>
-	<script>
-
-	  var mapLink = document.querySelector(".contacts-button-map");
-
-	  var mapPopup = document.querySelector(".modal-map");
-	  var mapClose = mapPopup.querySelector(".modal-close");
-	  
-	  mapLink.addEventListener("click", function (evt) {
-	    evt.preventDefault();
-	    mapPopup.classList.add("modal-show-map");
-	  });
-
-	  mapClose.addEventListener("click", function (evt) {
-	    evt.preventDefault();
-	    mapPopup.classList.remove("modal-show-map");
-	  });
-
-	  window.addEventListener("keydown", function (evt) {
-	    if (evt.keyCode === 27) {
-	      evt.preventDefault();
-	      if (mapPopup.classList.contains("modal-show-map")) {
-	        mapPopup.classList.remove("modal-show-map");
-	      }
-	    }
-	  });
-	  var link = document.querySelector(".mail");
-	  
-	  var popup = document.querySelector(".modal-mail");
-	  var close = popup.querySelector(".modal-close");
-	  
-	  var form = popup.querySelector("form");
-	  var username = popup.querySelector("[name=username]");
-	  var email = popup.querySelector("[name=email]");
-	  var comment = popup.querySelector("[name=comment]");
-	  
-	  var isStorageSupport = true;
-	  var storage = "";
-
-	  try {
-	    storage = localStorage.getItem("username");
-	  } catch (err) {
-	    isStorageSupport = false;
-	  }
-	  
-	  link.addEventListener("click", function (evt) {
-	    evt.preventDefault();
-	    popup.classList.add("modal-show");
-	    
-	    if (storage) {
-	      name.value = storage;
-	      email.focus();
-	    } else {
-	      name.focus();
-	    }
-	  });
-	  
-	  close.addEventListener("click", function (evt) {
-	    evt.preventDefault();
-	    popup.classList.remove("modal-show");
-	    popup.classList.remove("modal-error");
-	  });
-	  
-	  form.addEventListener("submit", function (evt) {
-	    if (!username.value || !email.value || !comment.value) {
-	      evt.preventDefault();
-	      popup.classList.remove("modal-error");
-	      popup.offsetWidth = popup.offsetWidth;
-	      popup.classList.add("modal-error");
-	    } else {
-	      if (isStorageSupport) {
-	        localStorage.setItem("username", username.value);
-	      }
-	    }
-	  });
-	  
-	  window.addEventListener("keydown", function (evt) {
-	    if (evt.keyCode === 27) {
-	      evt.preventDefault();
-	      if (popup.classList.contains("modal-show")) {
-	        popup.classList.remove("modal-show");
-	        popup.classList.remove("modal-error");
-	      }
-	    }
-	  });
-
-	</script>
+	    <script type="text/javascript" async="" src="js/script.min.js"></script>
 	</body>
 </html>
